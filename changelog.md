@@ -20,6 +20,12 @@
 * Fixed incorrect Hamiltonian construction in cases where complex hoppings were used together
   with translational symmetry.
 
+* Added `site_generator` which can be used to add new sites independent of the main `Lattice` definition. 
+  This is useful for creating heterostructures or defects with various add-atoms.
+  
+* Added `Model.system.count_neighbors()` which counts the neighbors each site has. Useful for finding edge atoms.
+
+* Site `state_modifier` and `position_modifier` can be freely ordered. 
 
 ## v0.9.4 | 2017-07-13
 
